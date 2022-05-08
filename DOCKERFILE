@@ -1,0 +1,11 @@
+FROM gitlab-registry.cern.ch/escape-wp2/docker-images/datalake-singleuser-root:fe86a27f
+LABEL maintainer="egazzarr"
+
+USER root
+WORKDIR /opt
+
+RUN pip install reana-client
+
+WORKDIR $HOME
+USER $NB_UID
+
