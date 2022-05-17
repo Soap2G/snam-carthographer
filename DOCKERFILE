@@ -24,9 +24,9 @@ RUN conda update \
 jupyterlab \
 notebook
 
-#    ========================== 
-#    Installing ROOT 
-#    ========================== 
+    ========================== 
+    Installing ROOT 
+    ========================== 
 RUN conda install root -c conda-forge
 
 
