@@ -28,8 +28,6 @@ notebook
 #    Cloning repo for CGNN test
 #   ========================== 
 
-RUN cd /home/jovyan/work/
-
-COPY ./notebooks/* .
+COPY ./notebooks /home/jovyan/work/notebooks
 
 WORKDIR /home/jovyan/work/
