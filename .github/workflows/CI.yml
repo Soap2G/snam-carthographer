@@ -19,8 +19,8 @@ jobs:
       
       - name: Log in to Docker Hub
         env:
-            DOCKER_USER: ${{secrets.DOCKER_USER}}
-            DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
+            DOCKER_USER: ${{env.DOCKER_USER}}
+            DOCKER_PASSWORD: ${{env.DOCKER_PASSWORD}}
         #run: |
         #    docker login -u $DOCKER_USER -p $DOCKER_PASSWORD 
         #uses: docker/login-action@f054a8b539a109f9f41c372932f1ae047eff08c9
