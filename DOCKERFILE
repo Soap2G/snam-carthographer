@@ -24,10 +24,11 @@ RUN conda update \
 jupyterlab \
 notebook
 
-    ========================== 
-    Installing ROOT 
-    ========================== 
-RUN conda install root -c conda-forge
+#    ========================== 
+#    Cloning repo for CGNN test
+#   ========================== 
+RUN cd /home/jovyan/work/ \
+    git clone https://github.com/imayachita/Explore_GCN.git
 
 
 WORKDIR /home/jovyan/work/
