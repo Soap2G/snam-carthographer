@@ -20,6 +20,8 @@ RUN apt-get update \
     libssl-dev\
     nano
 
+RUN conda install -c esri arcgis
+
 RUN conda update \
 jupyterlab \
 notebook
